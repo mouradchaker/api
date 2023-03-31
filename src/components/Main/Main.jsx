@@ -1,6 +1,9 @@
 import React from "react";
+import { useGetFoodQuery } from "../../app/foodSlice";
 
 function Main() {
+  const { data } = useGetFoodQuery();
+
   return (
     <div className="mt-10 border-2 mx-10 border-black py-6 pl-2">
       <h1>Titel : Chawarma</h1>
