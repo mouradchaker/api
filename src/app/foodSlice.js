@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const foodSlice = createApi({
   reducerPath: "food",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://zoo-api-nhvk.onrender.com/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5001/" }),
   endpoints: (builder) => ({
     getFood: builder.query({
       query: () => "food",
